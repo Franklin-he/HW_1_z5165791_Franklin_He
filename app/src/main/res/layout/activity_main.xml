@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:background="#c97200"
+            tools:context=".MainActivity">
+            <include android:id="@+id/dubai"
+                layout="@layout/dubai"
+                android:layout_width="350dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </include>
+
+            <include
+                android:id="@+id/los_angeles"
+                layout="@layout/los_angeles"
+                android:layout_width="350dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dubai">
+
+            </include>
+
+            <include android:id="@+id/london"
+                layout="@layout/london"
+                android:layout_width="350dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/los_angeles">
+
+            </include>
+
+            <include android:id="@+id/tokyo"
+                layout="@layout/tokyo"
+                android:layout_width="350dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/london">
+
+            </include>
+            <include android:id="@+id/paris"
+                layout="@layout/paris"
+                android:layout_width="350dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tokyo">
+
+            </include>
+
+            <include
+                android:id="@+id/beijing"
+                layout="@layout/beijing"
+                android:layout_width="350dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="70dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/paris">
+
+            </include>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_12h"
+            android:layout_width="238dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:text="12H"
+            android:textAlignment="center"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/btn_24H"
+            android:layout_width="238dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:text="24H"
+            android:textSize="36sp" />
+    </LinearLayout>
+</RelativeLayout>

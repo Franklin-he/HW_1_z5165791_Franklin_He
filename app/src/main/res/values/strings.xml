@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Individual_1</string>
+
+    <string name="los_angeles">America/Los_Angeles</string>>
+    <string name="tokyo">Asia/Tokyo</string>>
+    <string name="beijing">Asia/Shanghai</string>>
+    <string name="paris">Europe/Paris</string>>
+    <string name="dubai">Asia/Dubai</string>>
+    <string name="london">Europe/London</string>>
+</resources>

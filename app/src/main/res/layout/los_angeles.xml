@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="160dp"
+    android:gravity="center"
+    android:layout_marginBottom="20dp"
+    android:outlineAmbientShadowColor="@android:color/holo_orange_dark"
+    android:outlineSpotShadowColor="@android:color/holo_orange_light"
+    android:background="#ffb300">
+
+    <TextView
+        android:id="@+id/city_los_angeles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Los Angeles"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@id/hollywood"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/la_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="50dp"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@id/hollywood"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/city_los_angeles" />
+
+    <ImageView
+        android:id="@+id/hollywood"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="50dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/city_los_angeles"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hollywood" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
